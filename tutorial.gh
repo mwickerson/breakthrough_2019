@@ -1,0 +1,8 @@
+import Rhino
+
+grass = Rhino.RhinoApp.GetPlugInObject
+
+for i in range(1,6):
+    grass.SetSliderValue('d92a1699-8e55-49e7-882e-1976d2329326',i)
+    
+    grass.RunSolver('GUID.gh')
